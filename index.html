@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+</head>
+<body class="bg-gradient-info">
+    <nav class="navbar navbar-light bg-dark mb-5">
+        <span class="navbar-brand mb-3 h1 bg-info col-3 rounded mybtn">Todo app</span>
+    </nav>    
+    <main>
+        <div class="form-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 mx-auto form-col">
+                        <div class="card card-body">
+                            <form name="addTodoForm">
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input type="text" name="title" id="title" class="form-control">
+                                </div>
+                                <!-- /.form-group -->
+                                <div class="form-group">
+                                    <label for="text">Text</label>
+                                    <input type="text" name="text" id="text" class="form-control">
+                                </div>
+                                <!-- /.form-group -->
+                                <button type="submit" class="btn btn-primary">Add task</button>
+                            </form>
+                        </div>
+                        <!-- /.card card-body -->
+                    </div>
+                    <!-- /.col-6 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.form-section -->
+        <div class="todos-table mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 mx-auto ">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Title</td>
+                                    <td>Text</td>
+                                    <td>Controls</td>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                            
+                        </table>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-dark col-3" id = "editButton">Save Edit</button>
+                        </div>
+                        
+                    </div>
+                    <!-- /.col-8 mx-auto -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.todos-table -->
+    </main>
+   <!---<input type="button" name="buttSave" value="Сохранить изменения">-->
+    
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <!-- <script src="js/dom.js"></script> -->
+</body>
+</html>
